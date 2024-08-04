@@ -1,0 +1,1350 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Uncategorized",
+    "coa": {
+        "data": {
+            "description": "",
+            "edges": [
+                {
+                    "id": "port_3_to_port_22",
+                    "sourceNode": "3",
+                    "sourcePort": "3_out",
+                    "targetNode": "22",
+                    "targetPort": "22_in"
+                },
+                {
+                    "id": "port_22_to_port_23",
+                    "sourceNode": "22",
+                    "sourcePort": "22_out",
+                    "targetNode": "23",
+                    "targetPort": "23_in"
+                },
+                {
+                    "id": "port_30_to_port_31",
+                    "sourceNode": "30",
+                    "sourcePort": "30_out",
+                    "targetNode": "31",
+                    "targetPort": "31_in"
+                },
+                {
+                    "id": "port_56_to_port_57",
+                    "sourceNode": "56",
+                    "sourcePort": "56_out",
+                    "targetNode": "57",
+                    "targetPort": "57_in"
+                },
+                {
+                    "id": "port_0_to_port_3",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "3",
+                    "targetPort": "3_in"
+                },
+                {
+                    "id": "port_23_to_port_56",
+                    "sourceNode": "23",
+                    "sourcePort": "23_out",
+                    "targetNode": "56",
+                    "targetPort": "56_in"
+                },
+                {
+                    "id": "port_111_to_port_116",
+                    "sourceNode": "111",
+                    "sourcePort": "111_out",
+                    "targetNode": "116",
+                    "targetPort": "116_in"
+                },
+                {
+                    "id": "port_57_to_port_119",
+                    "sourceNode": "57",
+                    "sourcePort": "57_out",
+                    "targetNode": "119",
+                    "targetPort": "119_in"
+                },
+                {
+                    "id": "port_119_to_port_111",
+                    "sourceNode": "119",
+                    "sourcePort": "119_out",
+                    "targetNode": "111",
+                    "targetPort": "111_in"
+                },
+                {
+                    "id": "port_120_to_port_113",
+                    "sourceNode": "120",
+                    "sourcePort": "120_out",
+                    "targetNode": "113",
+                    "targetPort": "113_in"
+                },
+                {
+                    "id": "port_57_to_port_120",
+                    "sourceNode": "57",
+                    "sourcePort": "57_out",
+                    "targetNode": "120",
+                    "targetPort": "120_in"
+                },
+                {
+                    "id": "port_117_to_port_1",
+                    "sourceNode": "117",
+                    "sourcePort": "117_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_116_to_port_1",
+                    "sourceNode": "116",
+                    "sourcePort": "116_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_57_to_port_121",
+                    "sourceNode": "57",
+                    "sourcePort": "57_out",
+                    "targetNode": "121",
+                    "targetPort": "121_in"
+                },
+                {
+                    "id": "port_121_to_port_108",
+                    "sourceNode": "121",
+                    "sourcePort": "121_out",
+                    "targetNode": "108",
+                    "targetPort": "108_in"
+                },
+                {
+                    "id": "port_113_to_port_122",
+                    "sourceNode": "113",
+                    "sourcePort": "113_out",
+                    "targetNode": "122",
+                    "targetPort": "122_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_122_to_port_114",
+                    "sourceNode": "122",
+                    "sourcePort": "122_out",
+                    "targetNode": "114",
+                    "targetPort": "114_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 1
+                        }
+                    ],
+                    "id": "port_122_to_port_117",
+                    "sourceNode": "122",
+                    "sourcePort": "122_out",
+                    "targetNode": "117",
+                    "targetPort": "117_in"
+                },
+                {
+                    "id": "port_114_to_port_1",
+                    "sourceNode": "114",
+                    "sourcePort": "114_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_108_to_port_124",
+                    "sourceNode": "108",
+                    "sourcePort": "108_out",
+                    "targetNode": "124",
+                    "targetPort": "124_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_124_to_port_30",
+                    "sourceNode": "124",
+                    "sourcePort": "124_out",
+                    "targetNode": "30",
+                    "targetPort": "30_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 1
+                        }
+                    ],
+                    "id": "port_124_to_port_123",
+                    "sourceNode": "124",
+                    "sourcePort": "124_out",
+                    "targetNode": "123",
+                    "targetPort": "123_in"
+                },
+                {
+                    "id": "port_31_to_port_1",
+                    "sourceNode": "31",
+                    "sourcePort": "31_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_123_to_port_1",
+                    "sourceNode": "123",
+                    "sourcePort": "123_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_57_to_port_127",
+                    "sourceNode": "57",
+                    "sourcePort": "57_out",
+                    "targetNode": "127",
+                    "targetPort": "127_in"
+                },
+                {
+                    "id": "port_127_to_port_126",
+                    "sourceNode": "127",
+                    "sourcePort": "127_out",
+                    "targetNode": "126",
+                    "targetPort": "126_in"
+                },
+                {
+                    "id": "port_126_to_port_1",
+                    "sourceNode": "126",
+                    "sourcePort": "126_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                }
+            ],
+            "hash": "ef92db3a18bd281e4997e71ab21ba97f33efc5fd",
+            "nodes": {
+                "0": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_start",
+                        "id": "0",
+                        "type": "start"
+                    },
+                    "errors": {},
+                    "id": "0",
+                    "type": "start",
+                    "warnings": {},
+                    "x": 360,
+                    "y": -7.673861546209082e-13
+                },
+                "1": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_finish",
+                        "id": "1",
+                        "type": "end"
+                    },
+                    "errors": {},
+                    "id": "1",
+                    "type": "end",
+                    "warnings": {},
+                    "x": 560,
+                    "y": 1760
+                },
+                "108": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionId": 1,
+                        "functionName": "playbook_Datamodel_events_enrichment_from_ES_1",
+                        "id": "108",
+                        "inputs": {
+                            "threat_match_value": {
+                                "datapaths": [
+                                    "container:data.summary.threat_match_value"
+                                ],
+                                "deduplicate": true
+                            }
+                        },
+                        "playbookName": "Datamodel events enrichment from ES",
+                        "playbookRepo": 2,
+                        "playbookRepoName": "local",
+                        "playbookType": "data",
+                        "synchronous": true,
+                        "type": "playbook"
+                    },
+                    "errors": {},
+                    "id": "108",
+                    "type": "playbook",
+                    "warnings": {},
+                    "x": -180,
+                    "y": 940
+                },
+                "111": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionId": 1,
+                        "functionName": "playbook_indicators_enrichment_1",
+                        "id": "111",
+                        "inputs": {
+                            "indicator_type": {
+                                "datapaths": [
+                                    "ip"
+                                ],
+                                "deduplicate": false
+                            },
+                            "indicators": {
+                                "datapaths": [
+                                    "container:data.summary.threat_match_value"
+                                ],
+                                "deduplicate": true
+                            }
+                        },
+                        "playbookName": "indicators_enrichment",
+                        "playbookRepo": 2,
+                        "playbookRepoName": "local",
+                        "playbookType": "data",
+                        "synchronous": true,
+                        "type": "playbook"
+                    },
+                    "errors": {},
+                    "id": "111",
+                    "type": "playbook",
+                    "warnings": {},
+                    "x": 680,
+                    "y": 1120
+                },
+                "113": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionId": 1,
+                        "functionName": "playbook_assets_and_identities_enrichment_1",
+                        "id": "113",
+                        "inputs": {
+                            "computername": {
+                                "datapaths": [
+                                    "get_triggered_event_details:action_result.data.*.computername"
+                                ],
+                                "deduplicate": true
+                            },
+                            "dest": {
+                                "datapaths": [
+                                    "get_triggered_event_details:action_result.data.*.dest"
+                                ],
+                                "deduplicate": true
+                            },
+                            "dest_hostname": {
+                                "datapaths": [
+                                    "get_triggered_event_details:action_result.data.*.dest_hostname"
+                                ],
+                                "deduplicate": true
+                            },
+                            "src": {
+                                "datapaths": [
+                                    "get_triggered_event_details:action_result.data.*.src"
+                                ],
+                                "deduplicate": true
+                            },
+                            "src_ip": {
+                                "datapaths": [
+                                    "get_triggered_event_details:action_result.data.*.src_ip"
+                                ],
+                                "deduplicate": true
+                            },
+                            "src_user": {
+                                "datapaths": [
+                                    "get_triggered_event_details:action_result.data.*.src_user"
+                                ],
+                                "deduplicate": true
+                            },
+                            "user": {
+                                "datapaths": [
+                                    "get_triggered_event_details:action_result.data.*.user"
+                                ],
+                                "deduplicate": true
+                            }
+                        },
+                        "playbookName": "assets_and_identities_enrichment",
+                        "playbookRepo": 2,
+                        "playbookRepoName": "local",
+                        "playbookType": "data",
+                        "synchronous": true,
+                        "type": "playbook"
+                    },
+                    "errors": {},
+                    "id": "113",
+                    "type": "playbook",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 1040
+                },
+                "114": {
+                    "data": {
+                        "action": "add task note",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "add_task_note_1",
+                        "id": "114",
+                        "parameters": {
+                            "content": "playbook_assets_and_identities_enrichment_1:playbook_output:task_note_identity",
+                            "id": "get_incident_1:action_result.data.*.id",
+                            "phase_id": "get_phase_1:action_result.data.*.id",
+                            "response_plan_id": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id",
+                            "task_id": "get_task_1:action_result.data.*.id",
+                            "title": {
+                                "functionId": 1,
+                                "parameters": [],
+                                "template": "# Identity details\n"
+                            }
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "title"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "content"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "phase_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "response_plan_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "114",
+                    "type": "missionControl",
+                    "userCode": "\n    # Write your custom code here...\n    phantom.debug(get_incident_1_result_data)\n    phantom.debug(playbook_assets_and_identities_enrichment_1_output_task_note_identity)\n    phantom.debug(get_task_1_result_data)\n    phantom.debug(get_phase_1_result_data)\n\n",
+                    "warnings": {},
+                    "x": 180,
+                    "y": 1380
+                },
+                "116": {
+                    "data": {
+                        "action": "add task note",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "customDatapaths": {
+                            "get_incident_1": {
+                                "action_result.data.*.current_response_plan_phase": {
+                                    "contains": [],
+                                    "isCustomDatapath": true,
+                                    "label": "action_result.data.*.current_response_plan_phase",
+                                    "value": "get_incident_1:action_result.data.*.current_response_plan_phase"
+                                },
+                                "action_result.data.*.current_response_plan_phase.response_plan_id": {
+                                    "contains": [],
+                                    "isCustomDatapath": true,
+                                    "label": "action_result.data.*.current_response_plan_phase.response_plan_id",
+                                    "value": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id"
+                                }
+                            }
+                        },
+                        "functionId": 8,
+                        "functionName": "add_task_note_8",
+                        "id": "116",
+                        "parameters": {
+                            "content": "playbook_indicators_enrichment_1:playbook_output:note_content",
+                            "id": "get_incident_1:action_result.data.*.id",
+                            "phase_id": "get_phase_1:action_result.data.*.id",
+                            "response_plan_id": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id",
+                            "task_id": "get_task_1:action_result.data.*.id",
+                            "title": "playbook_indicators_enrichment_1:playbook_output:note_title"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "title"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "content"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "phase_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "response_plan_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "116",
+                    "type": "missionControl",
+                    "userCode": "    phantom.debug(parameters)\n    phantom.debug(get_incident_1_result_data)\n    phantom.debug(playbook_indicators_enrichment_1_output_note_title)\n    phantom.debug(playbook_indicators_enrichment_1_output_note_content)\n    phantom.debug(get_task_1_result_data)\n    phantom.debug(get_phase_1_result_data)\n    \n    # Write your custom code here...\n\n",
+                    "warnings": {},
+                    "x": 680,
+                    "y": 1240
+                },
+                "117": {
+                    "data": {
+                        "action": "add task note",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 7,
+                        "functionName": "add_task_note_7",
+                        "id": "117",
+                        "parameters": {
+                            "content": "playbook_assets_and_identities_enrichment_1:playbook_output:task_note_assets",
+                            "id": "get_incident_1:action_result.data.*.id",
+                            "phase_id": "get_phase_1:action_result.data.*.id",
+                            "response_plan_id": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id",
+                            "task_id": "get_task_1:action_result.data.*.id",
+                            "title": {
+                                "functionId": 7,
+                                "parameters": [],
+                                "template": "# Asset details\n"
+                            }
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "title"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "content"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "phase_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "response_plan_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "117",
+                    "type": "missionControl",
+                    "userCode": "\n    # Write your custom code here...\n    phantom.debug(get_incident_1_result_data)\n    phantom.debug(playbook_assets_and_identities_enrichment_1_output_task_note_assets)\n    phantom.debug(get_task_1_result_data)\n    phantom.debug(get_phase_1_result_data)\n    \n\n",
+                    "warnings": {},
+                    "x": 540,
+                    "y": 1380
+                },
+                "119": {
+                    "data": {
+                        "action": "add task note",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 3,
+                        "functionName": "add_task_note_3",
+                        "id": "119",
+                        "parameters": {
+                            "content": "All associated events triggering this incident have been added to the Events tab. Please review the raw events for investigation.",
+                            "id": "get_incident_1:action_result.data.*.id",
+                            "phase_id": "get_phase_1:action_result.data.*.id",
+                            "response_plan_id": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id",
+                            "task_id": "get_task_1:action_result.data.*.id",
+                            "title": "# Associated events"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "title"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "content"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "phase_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "response_plan_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "119",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": 680,
+                    "y": 900
+                },
+                "120": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "noop",
+                            "repoName": "community"
+                        },
+                        "functionId": 1,
+                        "functionName": "noop_1",
+                        "id": "120",
+                        "selectMore": false,
+                        "type": "utility",
+                        "utilities": {
+                            "noop": {
+                                "description": "Do nothing and return nothing. Use this if you want to do something in a custom function setup section or leave a placeholder block in a playbook. This does not sleep or wait and will return as soon as possible.",
+                                "fields": [],
+                                "label": "noop",
+                                "name": "noop"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "noop": {}
+                        }
+                    },
+                    "errors": {},
+                    "id": "120",
+                    "type": "utility",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 904
+                },
+                "121": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "noop",
+                            "repoName": "community"
+                        },
+                        "functionId": 3,
+                        "functionName": "noop_3",
+                        "id": "121",
+                        "selectMore": false,
+                        "type": "utility",
+                        "utilities": {
+                            "noop": {
+                                "description": "Do nothing and return nothing. Use this if you want to do something in a custom function setup section or leave a placeholder block in a playbook. This does not sleep or wait and will return as soon as possible.",
+                                "fields": [],
+                                "label": "noop",
+                                "name": "noop"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "noop": {}
+                        }
+                    },
+                    "errors": {},
+                    "id": "121",
+                    "type": "utility",
+                    "warnings": {},
+                    "x": -180,
+                    "y": 820
+                },
+                "122": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "playbook_assets_and_identities_enrichment_1:playbook_output:task_note_identity",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            },
+                            {
+                                "comparisons": [
+                                    {
+                                        "op": "!=",
+                                        "param": "playbook_assets_and_identities_enrichment_1:playbook_output:task_note_assets",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 1,
+                                "display": "Else If",
+                                "logic": "and",
+                                "type": "elif"
+                            }
+                        ],
+                        "functionId": 1,
+                        "functionName": "decision_1",
+                        "id": "122",
+                        "type": "decision"
+                    },
+                    "errors": {},
+                    "id": "122",
+                    "type": "decision",
+                    "warnings": {},
+                    "x": 420,
+                    "y": 1184.5
+                },
+                "123": {
+                    "data": {
+                        "action": "add task note",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 4,
+                        "functionName": "add_task_note_4",
+                        "id": "123",
+                        "parameters": {
+                            "content": {
+                                "functionId": 4,
+                                "parameters": [
+                                    "playbook_datamodel_events_enrichment_from_es_1:playbook_output:task_note_datamodel_summary_nodata"
+                                ],
+                                "template": "{0}\n"
+                            },
+                            "id": "get_incident_1:action_result.data.*.id",
+                            "phase_id": "get_phase_1:action_result.data.*.id",
+                            "response_plan_id": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id",
+                            "task_id": "get_task_1:action_result.data.*.id",
+                            "title": {
+                                "functionId": 4,
+                                "parameters": [
+                                    "container:data.summary.threat_match_value"
+                                ],
+                                "template": "# Event summary from datamodels containing {0}:"
+                            }
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "title"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "content"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "phase_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "response_plan_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "123",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": 20,
+                    "y": 1220
+                },
+                "124": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "playbook_datamodel_events_enrichment_from_es_1:playbook_output:task_note_datamodel_summary",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            },
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 1,
+                                        "op": "!=",
+                                        "param": "playbook_datamodel_events_enrichment_from_es_1:playbook_output:task_note_datamodel_summary_nodata",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 1,
+                                "display": "Else If",
+                                "logic": "and",
+                                "type": "elif"
+                            }
+                        ],
+                        "functionId": 2,
+                        "functionName": "decision_2",
+                        "id": "124",
+                        "type": "decision"
+                    },
+                    "errors": {},
+                    "id": "124",
+                    "type": "decision",
+                    "warnings": {},
+                    "x": -100,
+                    "y": 1080
+                },
+                "126": {
+                    "data": {
+                        "action": "add task note",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 5,
+                        "functionName": "add_task_note_5",
+                        "id": "126",
+                        "parameters": {
+                            "content": "playbook_trustar_enrichment_1:playbook_output:note_content",
+                            "id": "get_incident_1:action_result.data.*.id",
+                            "phase_id": "get_phase_1:action_result.data.*.id",
+                            "response_plan_id": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id",
+                            "task_id": "get_task_1:action_result.data.*.id",
+                            "title": "playbook_trustar_enrichment_1:playbook_output:note_title"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "title"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "content"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "phase_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "response_plan_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "126",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": 1120,
+                    "y": 1060
+                },
+                "127": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionId": 1,
+                        "functionName": "playbook_trustar_enrichment_1",
+                        "id": "127",
+                        "inputs": {
+                            "domain": {
+                                "datapaths": [],
+                                "deduplicate": false
+                            },
+                            "hash": {
+                                "datapaths": [],
+                                "deduplicate": false
+                            },
+                            "ip": {
+                                "datapaths": [
+                                    "container:data.summary.threat_match_value"
+                                ],
+                                "deduplicate": false
+                            },
+                            "url": {
+                                "datapaths": [],
+                                "deduplicate": false
+                            }
+                        },
+                        "playbookName": "trustar enrichment",
+                        "playbookRepo": 2,
+                        "playbookRepoName": "local",
+                        "playbookType": "data",
+                        "synchronous": true,
+                        "type": "playbook"
+                    },
+                    "errors": {},
+                    "id": "127",
+                    "type": "playbook",
+                    "warnings": {},
+                    "x": 1120,
+                    "y": 880
+                },
+                "22": {
+                    "data": {
+                        "action": "get phase",
+                        "actionType": "get",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "get_phase_1",
+                        "id": "22",
+                        "parameters": {
+                            "id": "get_incident_1:action_result.data.*.display_id"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "22",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 296
+                },
+                "23": {
+                    "data": {
+                        "action": "get task",
+                        "actionType": "get",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "get_task_1",
+                        "id": "23",
+                        "parameters": {
+                            "id": "get_incident_1:action_result.data.*.display_id",
+                            "task_id": "get_phase_1:action_result.data.*.tasks.*.id"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "23",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 444
+                },
+                "3": {
+                    "data": {
+                        "action": "get incident",
+                        "actionType": "get",
+                        "advanced": {
+                            "join": [],
+                            "scope": "all"
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "get_incident_1",
+                        "id": "3",
+                        "parameters": {
+                            "id": "container:external_id"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "3",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 148
+                },
+                "30": {
+                    "data": {
+                        "action": "add task note",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 2,
+                        "functionName": "add_task_note_2",
+                        "id": "30",
+                        "parameters": {
+                            "content": {
+                                "parameters": [
+                                    "playbook_datamodel_events_enrichment_from_es_1:playbook_output:task_note_datamodel_summary"
+                                ],
+                                "template": "{0}"
+                            },
+                            "id": "get_incident_1:action_result.data.*.id",
+                            "phase_id": "get_phase_1:action_result.data.*.id",
+                            "response_plan_id": "get_incident_1:action_result.data.*.current_response_plan_phase.response_plan_id",
+                            "task_id": "get_task_1:action_result.data.*.id",
+                            "title": {
+                                "functionId": 2,
+                                "parameters": [
+                                    "container:data.summary.threat_match_value"
+                                ],
+                                "template": "# Event summary from datamodels containing {0}:\n"
+                            }
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "id"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "title"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "",
+                                "field": "content"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "task_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "phase_id"
+                            },
+                            {
+                                "data_type": "string",
+                                "field": "response_plan_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "30",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": -420,
+                    "y": 1220
+                },
+                "31": {
+                    "data": {
+                        "action": "update incidents",
+                        "actionType": "post",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "Mission Control",
+                        "connectorConfigs": [
+                            "builtin_mc_connector"
+                        ],
+                        "connectorId": 182,
+                        "connectorVersion": "v1",
+                        "functionId": 2,
+                        "functionName": "update_incidents_2",
+                        "id": "31",
+                        "parameters": {
+                            "assignee": "get_task_1:action_result.data.*.owner",
+                            "incident_id": "get_incident_1:action_result.data.*.id",
+                            "urgency": "high"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "incident_id"
+                            }
+                        ],
+                        "type": "missionControl"
+                    },
+                    "errors": {},
+                    "id": "31",
+                    "type": "missionControl",
+                    "warnings": {},
+                    "x": -280,
+                    "y": 1340
+                },
+                "56": {
+                    "data": {
+                        "action": "run query",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "get splunk index",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "connector": "Splunk",
+                        "connectorConfigs": [
+                            "es-ebc"
+                        ],
+                        "connectorId": "91883aa8-9c81-470b-97a1-5d8f7995f560",
+                        "connectorVersion": "v1",
+                        "functionId": 8,
+                        "functionName": "get_splunk_index",
+                        "id": "56",
+                        "parameters": {
+                            "command": {
+                                "functionId": 8,
+                                "parameters": [
+                                    "container:data.summary.orig_sourcetype"
+                                ],
+                                "template": "| tstats count WHERE index=* AND sourcetype IN ({0}) by index sourcetype \n"
+                            },
+                            "display": "index,sourcetype",
+                            "end_time": "now",
+                            "query": {
+                                "parameters": [],
+                                "template": "| stats values(index) as index by sourcetype\n| eval index=mvjoin(index,\",\")\n"
+                            },
+                            "search_mode": "smart",
+                            "start_time": "-1h"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "query"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "search",
+                                "field": "command"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "smart",
+                                "field": "search_mode"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "56",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 580
+                },
+                "57": {
+                    "data": {
+                        "action": "run query",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "get triggered event details",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "connector": "Splunk",
+                        "connectorConfigs": [
+                            "es-ebc"
+                        ],
+                        "connectorId": "91883aa8-9c81-470b-97a1-5d8f7995f560",
+                        "connectorVersion": "v1",
+                        "functionId": 9,
+                        "functionName": "get_triggered_event_details",
+                        "id": "57",
+                        "parameters": {
+                            "attach_result": false,
+                            "command": "| search",
+                            "display": "sourcetype,action,app,application ,client_ip,client_location,server_ip,server_location ,signature ,dest ,dest_port ,dest_hostname ,dest_location ,dest_zone ,src ,src_ip ,src_location ,src_port ,src_zone ,src_user ,user ,direction ,dvc ,dvc_name ,computername ,site ,http_method ,http_user_agent ,http_category ,http_referer ,http_referrer ,http_referrer_name ,http_referrer_domain ,log_type ,rule ,status ,status_description ,url ,file_hash ,file_name ,vendor_product",
+                            "end_time": "now",
+                            "query": {
+                                "functionId": 9,
+                                "parameters": [
+                                    "get_splunk_index:action_result.data.*.index",
+                                    "container:data.summary.orig_sourcetype",
+                                    "container:data.summary.threat_match_value",
+                                    "get_incident_1:action_result.data.*.display_id",
+                                    "get_incident_1:action_result.data.*.id"
+                                ],
+                                "template": "index IN ({0}) sourcetype IN ({1}) \"{2}\"\n| `add_events({3})`\n| eval dest=if((dest=\"-\" OR dest=\"\"),dest_ip,dest) \n| rename s_computername as computername \n| fields sourcetype action app application app:* client_ip client_location server_ip server_location signature dest dest_port dest_hostname dest_location dest_zone src src_ip src_location src_port src_zone src_user user direction dvc dvc_name computername site http_method http_user_agent http_category http_referer http_referrer http_referrer_name http_referrer_domain log_type rule status status_description url file_hash file_name vendor_product\n| table sourcetype action app application app:* client_ip client_location server_ip server_location signature dest dest_port dest_hostname dest_location dest_zone src src_ip src_location src_port src_zone src_user user direction dvc dvc_name computername site http_method http_user_agent http_category http_referer http_referrer http_referrer_name http_referrer_domain log_type rule status status_description url file_hash file_name vendor_product"
+                            },
+                            "search_mode": "verbose",
+                            "start_time": "-2h"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "query"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "search",
+                                "field": "command"
+                            },
+                            {
+                                "data_type": "string",
+                                "default": "smart",
+                                "field": "search_mode"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "57",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 720
+                }
+            },
+            "notes": ""
+        },
+        "input_spec": null,
+        "output_spec": null,
+        "playbook_trigger": "artifact_created",
+        "playbook_type": "automation",
+        "python_version": "3",
+        "schema": "5.0.10",
+        "version": "6.1.1.211"
+    },
+    "create_time": "2024-08-04T04:09:36.338357+00:00",
+    "draft_mode": false,
+    "labels": [
+        "threat_ip"
+    ],
+    "tags": []
+}
