@@ -1,0 +1,330 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Uncategorized",
+    "coa": {
+        "data": {
+            "description": "",
+            "edges": [
+                {
+                    "id": "port_6_to_port_7",
+                    "sourceNode": "6",
+                    "sourcePort": "6_out",
+                    "targetNode": "7",
+                    "targetPort": "7_in"
+                },
+                {
+                    "id": "port_6_to_port_8",
+                    "sourceNode": "6",
+                    "sourcePort": "6_out",
+                    "targetNode": "8",
+                    "targetPort": "8_in"
+                },
+                {
+                    "id": "port_6_to_port_9",
+                    "sourceNode": "6",
+                    "sourcePort": "6_out",
+                    "targetNode": "9",
+                    "targetPort": "9_in"
+                },
+                {
+                    "id": "port_7_to_port_10",
+                    "sourceNode": "7",
+                    "sourcePort": "7_out",
+                    "targetNode": "10",
+                    "targetPort": "10_in"
+                },
+                {
+                    "id": "port_8_to_port_10",
+                    "sourceNode": "8",
+                    "sourcePort": "8_out",
+                    "targetNode": "10",
+                    "targetPort": "10_in"
+                },
+                {
+                    "id": "port_9_to_port_10",
+                    "sourceNode": "9",
+                    "sourcePort": "9_out",
+                    "targetNode": "10",
+                    "targetPort": "10_in"
+                },
+                {
+                    "id": "port_10_to_port_1",
+                    "sourceNode": "10",
+                    "sourcePort": "10_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_0_to_port_6",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "6",
+                    "targetPort": "6_in"
+                }
+            ],
+            "hash": "e78431f8193b852b91f89564980b2b4ab40138cf",
+            "nodes": {
+                "0": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_start",
+                        "id": "0",
+                        "type": "start"
+                    },
+                    "errors": {},
+                    "id": "0",
+                    "type": "start",
+                    "warnings": {},
+                    "x": 360,
+                    "y": -6.394884621840902e-14
+                },
+                "1": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_finish",
+                        "id": "1",
+                        "type": "end"
+                    },
+                    "errors": {},
+                    "id": "1",
+                    "type": "end",
+                    "warnings": {},
+                    "x": 360,
+                    "y": 772
+                },
+                "10": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "noop",
+                            "repoName": "community"
+                        },
+                        "functionId": 1,
+                        "functionName": "noop_1",
+                        "id": "10",
+                        "loop": {
+                            "enabled": false,
+                            "exitAfterUnit": "m",
+                            "exitAfterValue": 10,
+                            "exitConditionEnabled": false,
+                            "exitLoopAfter": 2,
+                            "pauseUnit": "m",
+                            "pauseValue": 2
+                        },
+                        "selectMore": false,
+                        "type": "utility",
+                        "utilities": {
+                            "noop": {
+                                "description": "Do nothing and return nothing. Use this if you want to do something in a custom function setup section or leave a placeholder block in a playbook. This does not sleep or wait and will return as soon as possible.",
+                                "fields": [],
+                                "label": "noop",
+                                "name": "noop"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "noop": {}
+                        }
+                    },
+                    "errors": {},
+                    "id": "10",
+                    "type": "utility",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 624
+                },
+                "6": {
+                    "data": {
+                        "advanced": {
+                            "customName": "create response templates",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "functionId": 2,
+                        "functionName": "create_response_templates",
+                        "id": "6",
+                        "inputParameters": [],
+                        "outputVariables": [
+                            "threat_activity_investigation_json_body"
+                        ],
+                        "type": "code"
+                    },
+                    "errors": {},
+                    "id": "6",
+                    "type": "code",
+                    "userCode": "\n    # Write your custom code here...\n    var_true = True\n    var_false = False\n    var_0 = 0\n    var_1 = 1\n    var_2 = 2\n    var_3 = 3\n    \n    # Create JSON body for \"Risk Notable Investigation\" response plan\n    \n    create_response_templates__threat_activity_investigation_json_body = {\n        \"name\": \"Threat Activity Detected from IP address\",\n        \"version\": \"1\",\n        \"is_default\": var_false,\n        \"description\": \"A series of tasks for enrichment, investigation and response to incidents created by Threat Activity Detected incidents\",\n        \"template_status\": \"published\",\n        \"phases\": [\n            {\n                \"name\": \"Gather related events and threat context\",\n                \"order\": var_1,\n                \"tasks\": [\n                    {\n                        \"name\": \"[AUTO] Gather related events from Network, Web and Authentication datamodels\",\n                        \"order\": var_1,\n                        \"description\": \"This playbook will run queries across Network, Web and Authentication datamodels to get any other related events showing communication with the threat IP address\",\n                        \"suggestions\": {\n                            \"actions\": [],\n                            \"searches\": [],\n                            \"playbooks\": [\n                                {\n                                    \"name\": \"Threat_Activity_Detected_IP_investigation\",\n                                    \"scope\": \"all\",\n                                    \"description\": \"This master playbook will call individual input playbooks to create summary for the incident\",\n                                    \"playbook_id\": \"local/Threat_Activity_Detected_IP_investigation\",\n                                    \"last_job_id\": var_0\n                                }\n                            ]\n                        },\n                        \"is_note_required\": var_false\n                    },\n                    {\n                        \"name\": \"[MANUAL] Vet indicator based on analysis and submit to Trustar\",\n                        \"order\": var_2,\n                        \"description\": \"This task provides the capability to submit validated IOC to Trustar with additional flags for blacklisting\",\n                        \"suggestions\": {\n                            \"actions\": \"submit report - TruSTAR\",\n                            \"searches\": [],\n                            \"playbooks\": [],\n                        },\n                        \"is_note_required\": var_false\n                    },\n                    {\n                        \"name\": \"[MANUAL] Remediation actions\",\n                        \"order\": var_3,\n                        \"description\": \"Containment actions as required by the analysts based on the threat hunting information gathered in previous tasks\",\n                        \"suggestions\": {\n                            \"actions\": [],\n                            \"searches\": [],\n                            \"playbooks\": []\n                        },\n                        \"is_note_required\": var_false\n                    }\n                ]\n            }\n        ]\n       }\n            \n                  \n    \n    convert_json_threat_activity_investigation = json.dumps(create_response_templates__threat_activity_investigation_json_body)\n    phantom.debug(convert_json_threat_activity_investigation)\n    create_response_templates__threat_activity_investigation_json_body = convert_json_threat_activity_investigation \n    \n    \n",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 300
+                },
+                "7": {
+                    "data": {
+                        "action": "post data",
+                        "actionType": "generic",
+                        "advanced": {
+                            "customName": "upload Risk Notable Investigate Plan",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "connector": "HTTP",
+                        "connectorConfigs": [
+                            "mission_control"
+                        ],
+                        "connectorId": "290b7499-0374-4930-9cdc-5e9b05d65827",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "upload_risk_notable_investigate_plan",
+                        "id": "7",
+                        "loop": {
+                            "enabled": false,
+                            "exitAfterUnit": "m",
+                            "exitAfterValue": 10,
+                            "exitConditionEnabled": false,
+                            "exitLoopAfter": 2,
+                            "pauseUnit": "m",
+                            "pauseValue": 2
+                        },
+                        "parameters": {
+                            "body": "create_response_templates:custom_function:risk_investigation_json_body",
+                            "location": "servicesNS/-/missioncontrol/v1/responsetemplates"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "location"
+                            }
+                        ],
+                        "tab": "byAction",
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "7",
+                    "type": "action",
+                    "warnings": {},
+                    "x": -1.4210854715202004e-14,
+                    "y": 459.99999999999994
+                },
+                "8": {
+                    "data": {
+                        "action": "post data",
+                        "actionType": "generic",
+                        "advanced": {
+                            "customName": "upload Risk Notable Response Plan",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "connector": "HTTP",
+                        "connectorConfigs": [
+                            "mission_control"
+                        ],
+                        "connectorId": "290b7499-0374-4930-9cdc-5e9b05d65827",
+                        "connectorVersion": "v1",
+                        "functionId": 2,
+                        "functionName": "upload_risk_notable_response_plan",
+                        "id": "8",
+                        "loop": {
+                            "enabled": false,
+                            "exitAfterUnit": "m",
+                            "exitAfterValue": 10,
+                            "exitConditionEnabled": false,
+                            "exitLoopAfter": 2,
+                            "pauseUnit": "m",
+                            "pauseValue": 2
+                        },
+                        "parameters": {
+                            "body": "create_response_templates:custom_function:risk_response_json_body",
+                            "location": "servicesNS/-/missioncontrol/v1/responsetemplates"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "location"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "8",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 340,
+                    "y": 459.99999999999994
+                },
+                "9": {
+                    "data": {
+                        "action": "post data",
+                        "actionType": "generic",
+                        "advanced": {
+                            "customName": "upload Risk Notable Auto Response Plan",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "connector": "HTTP",
+                        "connectorConfigs": [
+                            "mission_control"
+                        ],
+                        "connectorId": "290b7499-0374-4930-9cdc-5e9b05d65827",
+                        "connectorVersion": "v1",
+                        "functionId": 3,
+                        "functionName": "upload_risk_notable_auto_response_plan",
+                        "id": "9",
+                        "loop": {
+                            "enabled": false,
+                            "exitAfterUnit": "m",
+                            "exitAfterValue": 10,
+                            "exitConditionEnabled": false,
+                            "exitLoopAfter": 2,
+                            "pauseUnit": "m",
+                            "pauseValue": 2
+                        },
+                        "parameters": {
+                            "body": "create_response_templates:custom_function:risk_auto_response_json_body",
+                            "location": "servicesNS/-/missioncontrol/v1/responsetemplates"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "location"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "9",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 680,
+                    "y": 459.99999999999994
+                }
+            },
+            "notes": "",
+            "origin": {
+                "playbook_id": 1552,
+                "playbook_name": "[MC] Upload Risk Notable response templates",
+                "playbook_repo_id": 2,
+                "playbook_repo_name": "local"
+            }
+        },
+        "input_spec": null,
+        "output_spec": null,
+        "playbook_trigger": "artifact_created",
+        "playbook_type": "automation",
+        "python_version": "3",
+        "schema": "5.0.11",
+        "version": "6.2.1.305"
+    },
+    "create_time": "2024-08-04T04:10:19.641868+00:00",
+    "draft_mode": false,
+    "labels": [
+        "*"
+    ],
+    "tags": []
+}
