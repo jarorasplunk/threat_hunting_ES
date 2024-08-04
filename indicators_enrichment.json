@@ -1,0 +1,761 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Use Cases",
+    "coa": {
+        "data": {
+            "description": "Use Intelligence Management to gather threat information about indicators in a SOAR event. Tag the indicators with the normalized priority score from Intelligence Management and summarize the findings in an analyst note. This playbook is meant to be used as a child playbook executed by a parent playbook such as \"threat_intel_investigate\".",
+            "edges": [
+                {
+                    "id": "port_0_to_port_7",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "7",
+                    "targetPort": "7_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_7_to_port_8",
+                    "sourceNode": "7",
+                    "sourcePort": "7_out",
+                    "targetNode": "8",
+                    "targetPort": "8_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_8_to_port_9",
+                    "sourceNode": "8",
+                    "sourcePort": "8_out",
+                    "targetNode": "9",
+                    "targetPort": "9_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_8_to_port_10",
+                    "sourceNode": "8",
+                    "sourcePort": "8_out",
+                    "targetNode": "10",
+                    "targetPort": "10_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_8_to_port_12",
+                    "sourceNode": "8",
+                    "sourcePort": "8_out",
+                    "targetNode": "12",
+                    "targetPort": "12_in"
+                },
+                {
+                    "id": "port_9_to_port_13",
+                    "sourceNode": "9",
+                    "sourcePort": "9_out",
+                    "targetNode": "13",
+                    "targetPort": "13_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_13_to_port_14",
+                    "sourceNode": "13",
+                    "sourcePort": "13_out",
+                    "targetNode": "14",
+                    "targetPort": "14_in"
+                },
+                {
+                    "id": "port_19_to_port_1",
+                    "sourceNode": "19",
+                    "sourcePort": "19_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_14_to_port_22",
+                    "sourceNode": "14",
+                    "sourcePort": "14_out",
+                    "targetNode": "22",
+                    "targetPort": "22_in"
+                },
+                {
+                    "id": "port_16_to_port_22",
+                    "sourceNode": "16",
+                    "sourcePort": "16_out",
+                    "targetNode": "22",
+                    "targetPort": "22_in"
+                },
+                {
+                    "id": "port_18_to_port_22",
+                    "sourceNode": "18",
+                    "sourcePort": "18_out",
+                    "targetNode": "22",
+                    "targetPort": "22_in"
+                },
+                {
+                    "id": "port_22_to_port_19",
+                    "sourceNode": "22",
+                    "sourcePort": "22_out",
+                    "targetNode": "19",
+                    "targetPort": "19_in"
+                },
+                {
+                    "id": "port_10_to_port_25",
+                    "sourceNode": "10",
+                    "sourcePort": "10_out",
+                    "targetNode": "25",
+                    "targetPort": "25_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_25_to_port_16",
+                    "sourceNode": "25",
+                    "sourcePort": "25_out",
+                    "targetNode": "16",
+                    "targetPort": "16_in"
+                },
+                {
+                    "id": "port_12_to_port_27",
+                    "sourceNode": "12",
+                    "sourcePort": "12_out",
+                    "targetNode": "27",
+                    "targetPort": "27_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_27_to_port_18",
+                    "sourceNode": "27",
+                    "sourcePort": "27_out",
+                    "targetNode": "18",
+                    "targetPort": "18_in"
+                }
+            ],
+            "hash": "b5cbe77b69557aa7fd69c6a1fb5f99595d8422ce",
+            "nodes": {
+                "0": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_start",
+                        "id": "0",
+                        "type": "start"
+                    },
+                    "errors": {},
+                    "id": "0",
+                    "type": "start",
+                    "warnings": {},
+                    "x": 420,
+                    "y": -1.2789769243681803e-13
+                },
+                "1": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionId": 1,
+                        "functionName": "on_finish",
+                        "id": "1",
+                        "type": "end"
+                    },
+                    "errors": {},
+                    "id": "1",
+                    "type": "end",
+                    "userCode": "\n    # This function is called after all actions are completed.\n    # summary of all the action and/or all details of actions\n    # can be collected here.\n\n    # summary_json = phantom.get_summary()\n    # if 'result' in summary_json:\n        # for action_result in summary_json['result']:\n            # if 'action_run_id' in action_result:\n                # action_results = phantom.get_action_results(action_run_id=action_result['action_run_id'], result_data=False, flatten=False)\n                # phantom.debug(action_results)\n\n",
+                    "warnings": {},
+                    "x": 420,
+                    "y": 1500
+                },
+                "10": {
+                    "data": {
+                        "action": "ip reputation",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "umbrella_investigate_indicator_report",
+                            "customNameId": 0,
+                            "delayTime": 0,
+                            "join": []
+                        },
+                        "connector": "Cisco Umbrella Investigate",
+                        "connectorConfigs": [
+                            "cisco umbrella investigate"
+                        ],
+                        "connectorId": "5fc14867-8c8e-4cc2-8198-641df784bf1a",
+                        "connectorVersion": "v1",
+                        "functionId": 2,
+                        "functionName": "umbrella_investigate_indicator_report",
+                        "id": "10",
+                        "parameters": {
+                            "ip": "filtered-data:filter_2:condition_1:playbook_input:indicators"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "ip"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "10",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 400,
+                    "y": 540
+                },
+                "12": {
+                    "data": {
+                        "action": "get indicator",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "crowdstrike_ip_indicator",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "connector": "CrowdStrike OAuth API",
+                        "connectorConfigs": [
+                            "crowdstrike splunk soar connector"
+                        ],
+                        "connectorId": "ae971ba5-3117-444a-8ac5-6ce779f3a232",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "crowdstrike_ip_indicator",
+                        "id": "12",
+                        "parameters": {
+                            "indicator_value": "",
+                            "resource_id": {
+                                "functionId": 1,
+                                "parameters": [
+                                    "filtered-data:filter_2:condition_1:playbook_input:indicators"
+                                ],
+                                "template": "ip_address_{0}\n"
+                            }
+                        },
+                        "requiredParameters": [],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "12",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 800,
+                    "y": 680
+                },
+                "13": {
+                    "data": {
+                        "advanced": {
+                            "customName": "vt_indicator_found",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": ">",
+                                        "param": "vt_ip_reputation:action_result.summary.harmless",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": ">",
+                                        "param": "vt_ip_reputation:action_result.summary.malicious",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": ">",
+                                        "param": "vt_ip_reputation:action_result.summary.suspicious",
+                                        "value": "0"
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "or"
+                            },
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 1,
+                                        "op": "==",
+                                        "param": "",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 1,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 3,
+                        "functionName": "vt_indicator_found",
+                        "id": "13",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "13",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 60,
+                    "y": 852
+                },
+                "14": {
+                    "customCode": null,
+                    "data": {
+                        "advanced": {
+                            "customName": "vt_indicator_report",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "functionId": 2,
+                        "functionName": "vt_indicator_report",
+                        "id": "14",
+                        "inputParameters": [
+                            "vt_ip_reputation:action_result.data.*.id",
+                            "vt_ip_reputation:action_result.data.*.attributes.as_owner",
+                            "vt_ip_reputation:action_result.data.*.attributes.asn",
+                            "vt_ip_reputation:action_result.data.*.attributes.country",
+                            "vt_ip_reputation:action_result.data.*.attributes.network",
+                            "vt_ip_reputation:action_result.data.*.attributes.reputation",
+                            "vt_ip_reputation:action_result.summary.harmless",
+                            "vt_ip_reputation:action_result.summary.malicious",
+                            "vt_ip_reputation:action_result.summary.suspicious",
+                            "vt_ip_reputation:action_result.summary.undetected",
+                            "vt_ip_reputation:action_result.data.*.links.self",
+                            "",
+                            ""
+                        ],
+                        "outputVariables": [
+                            "vt_note_content"
+                        ],
+                        "type": "code"
+                    },
+                    "errors": {},
+                    "id": "14",
+                    "type": "code",
+                    "userCode": "\n    # Write your custom code here...\n    import urllib.parse\n    \n    if vt_ip_reputation_result_item_0:\n        note = (\n            \"\\n**Virustotal report**\\n\"\n            \"| Indicator | AS_Owner | ASN | Country | Network | Reputation | Harmless | Malicious | Suspicious | Undetected | Full Report |\\n\"\n            \"| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\\n\"\n        )\n        for item in vt_ip_reputation_result_data:\n                indicator = item[0]\n                as_owner = item[1]\n                asn = item[2]\n                country = item[3]\n                network = item[4]\n                reputation = item[5]\n                harmless = item[6]\n                malicious = item[7]\n                suspicious = item[8]\n                undetected = item[9]\n                full_report = item[10]\n                note += \"|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|\\n\".format(indicator, as_owner, asn, country, network, reputation, harmless, malicious, suspicious, undetected, full_report)\n        vt_indicator_report__vt_note_content = note\n    else:\n        vt_indicator_report__vt_note_content = \"\\n\\n**Virustotal report**\\n\\nIndicator not found in Virustotal\\n\"    \n    \n    phantom.debug(\"vt_indicator_report__vt_note_content\")    \n    phantom.debug(vt_indicator_report__vt_note_content)\n\n",
+                    "warnings": {},
+                    "x": 0,
+                    "y": 1040
+                },
+                "16": {
+                    "data": {
+                        "advanced": {
+                            "customName": "umbrella_indicator_report",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "functionId": 3,
+                        "functionName": "umbrella_indicator_report",
+                        "id": "16",
+                        "inputParameters": [
+                            "umbrella_investigate_indicator_report:action_result.parameter.ip",
+                            "umbrella_investigate_indicator_report:action_result.summary.ip_status",
+                            "umbrella_investigate_indicator_report:action_result.summary.total_blocked_domains",
+                            "umbrella_investigate_indicator_report:action_result.data.*.id",
+                            "umbrella_investigate_indicator_report:action_result.data.*.name",
+                            "umbrella_investigate_indicator_report:action_result.status"
+                        ],
+                        "outputVariables": [
+                            "umbrella_note_content"
+                        ],
+                        "type": "code"
+                    },
+                    "errors": {},
+                    "id": "16",
+                    "type": "code",
+                    "userCode": "\n    # Write your custom code here...\n    import urllib.parse        \n    \n    if umbrella_investigate_indicator_report_result_item_5 != \"failed\":\n        note = (\n            \"\\n\\n**Cisco Umbrella Investigate report**\\n\"\n            \"| Indicator | Status | Number of blocked domains | Blocked domain ID | Blocked domain name |\\n\"\n            \"| :--- | :--- | :--- | :--- | :--- |\\n\"\n        )\n        limit = 25\n        phantom.debug(type(limit))\n        if umbrella_investigate_indicator_report_summary_total_blocked_domains[0]:\n            blocked_count = int(umbrella_investigate_indicator_report_summary_total_blocked_domains[0])\n        else:\n            blocked_count = 0\n        phantom.debug(type(blocked_count))\n        phantom.debug(blocked_count)\n        \n        if blocked_count >= limit:\n            for item in umbrella_investigate_indicator_report_result_data[0:24]:\n                indicator = item[0]\n                ip_status = item[1]\n                no_blocked_domains = item[2]\n                blocked_domain_id = item[3]\n                blocked_domain_name = item[4]\n                note += \"|{}|{}|{}|{}|{}|\\n\".format(indicator, ip_status, no_blocked_domains, blocked_domain_id, blocked_domain_name)\n            note += \"\\nOnly 25 out of total \" + str(blocked_count) + \" blocked domains displayed here. For complete list of blocked domains, please check in Cisco Umbrella Investigate or in the Automation tab\\n\" \n        else:                \n            for item in umbrella_investigate_indicator_report_result_data:\n                indicator = item[0]\n                ip_status = item[1]\n                no_blocked_domains = item[2]\n                blocked_domain_id = item[3]\n                blocked_domain_name = item[4]\n                note += \"|{}|{}|{}|{}|{}|\\n\".format(indicator, ip_status, no_blocked_domains, blocked_domain_id, blocked_domain_name)\n    \n    if umbrella_investigate_indicator_report_result_item_5 == \"failed\":\n        note = \"\\n\\n**Cisco Umbrella Investigate report**\\n\\nIndicator not found in Cisco Umbrella Investigate\\n\"\n        \n    umbrella_indicator_report__umbrella_note_content = note\n    phantom.debug(\"umbrella_indicator_report__umbrella_note_content\")    \n    phantom.debug(umbrella_indicator_report__umbrella_note_content)\n",
+                    "warnings": {},
+                    "x": 400,
+                    "y": 880
+                },
+                "18": {
+                    "data": {
+                        "advanced": {
+                            "customName": "crowdstrike_indicator_report",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "functionId": 4,
+                        "functionName": "crowdstrike_indicator_report",
+                        "id": "18",
+                        "inputParameters": [
+                            "crowdstrike_ip_indicator:action_result.parameter.resource_id",
+                            "crowdstrike_ip_indicator:action_result.status",
+                            "crowdstrike_ip_indicator:action_result.summary",
+                            "crowdstrike_ip_indicator:action_result.message"
+                        ],
+                        "outputVariables": [
+                            "crowdstrike_note_content"
+                        ],
+                        "type": "code"
+                    },
+                    "errors": {},
+                    "id": "18",
+                    "type": "code",
+                    "userCode": "\n    # Write your custom code here...\n    import urllib.parse\n    if crowdstrike_ip_indicator_result_message != \"Indicator not found\":\n        note = (\n            \"\\n\\n**Crowdstrike report**\\n\"\n            \"| Indicator | Status | Summary | Message |\\n\"\n            \"| :--- | :--- | :--- | :--- |\\n\"\n        )\n    \n        for item in crowdstrike_ip_indicator_result_data:\n            indicator = item[0]\n            status = item[1]\n            summary = item[2]\n            message = item[3]\n            note += \"|{}|{}|{}|{}|\\n\".format(indicator, status, summary, message)\n        if note is not None:\n            crowdstrike_indicator_report__crowdstrike_note_content = note\n            \n    if crowdstrike_ip_indicator_result_message == \"Indicator not found\":\n        crowdstrike_indicator_report__crowdstrike_note_content = \"\\n\\n**Crowdstrike report**\\n\\nIndicator not found in Crowdstrike\\n\"\n    \n    phantom.debug(\"crowdstrike_indicator_report__crowdstrike_note_content\")    \n    phantom.debug(crowdstrike_indicator_report__crowdstrike_note_content)\n    \n\n",
+                    "warnings": {},
+                    "x": 800,
+                    "y": 1040
+                },
+                "19": {
+                    "customCode": null,
+                    "data": {
+                        "advanced": {
+                            "customName": "full_report_note",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "functionId": 5,
+                        "functionName": "full_report_note",
+                        "id": "19",
+                        "inputParameters": [
+                            "umbrella_indicator_report:custom_function:umbrella_note_content",
+                            "crowdstrike_indicator_report:custom_function:crowdstrike_note_content",
+                            "vt_indicator_report:custom_function:vt_note_content"
+                        ],
+                        "outputVariables": [
+                            "full_report_note_content"
+                        ],
+                        "type": "code"
+                    },
+                    "errors": {},
+                    "id": "19",
+                    "type": "code",
+                    "userCode": "    import urllib.parse\n    \n    #vt_indicator_report__vt_note_content = json.loads(phantom.get_run_data(key=\"vt_indicator_report:vt_note_content\"))# pylint: disable=used-before-assignment\n    #umbrella_indicator_report__umbrella_note_content = json.loads(phantom.get_run_data(key=\"umbrella_indicator_report:umbrella_note_content\")) # pylint: disable=used-before-assignment\n    #crowdstrike_indicator_report__crowdstrike_note_content = json.loads(phantom.get_run_data(key=\"crowdstrike_indicator_report:crowdstrike_note_content\")) # pylint: disable=used-before-assignment\n    \n    phantom.debug(\"Full report - vt_indicator_report__vt_note_content\")\n    phantom.debug(vt_indicator_report__vt_note_content)\n    phantom.debug(\"Full report - umbrella_indicator_report__umbrella_note_content\")\n    phantom.debug(umbrella_indicator_report__umbrella_note_content)\n    phantom.debug(\"Full report - crowdstrike_indicator_report__crowdstrike_note_content\")\n    phantom.debug(crowdstrike_indicator_report__crowdstrike_note_content)\n    \n    if vt_indicator_report__vt_note_content is None:\n        vt_indicator_report__vt_note_content = \"\\n**Virustotal report**\\n\\nIndicator not found in Virustotal\\n\"\n    if umbrella_indicator_report__umbrella_note_content is None:\n        umbrella_indicator_report__umbrella_note_content = \"\\n**Cisco Umbrella Investigate report**\\n\\nIndicator not found in Cisco Umbrella Investigate\\n\"\n    if crowdstrike_indicator_report__crowdstrike_note_content is None:\n        crowdstrike_indicator_report__crowdstrike_note_content = \"\\n**Crowdstrike report**\\n\\nIndicator not found in Crowdstrike\\n\"\n        \n    note = vt_indicator_report__vt_note_content\n    note += umbrella_indicator_report__umbrella_note_content\n    note += crowdstrike_indicator_report__crowdstrike_note_content\n    full_report_note__full_report_note_content = note\n    # Write your custom code here...\n    \n    phantom.debug(\"full_report_note__full_report_note_content\")\n    phantom.debug(full_report_note__full_report_note_content)\n\n",
+                    "warnings": {},
+                    "x": 400,
+                    "y": 1340
+                },
+                "22": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "noop",
+                            "repoName": "community"
+                        },
+                        "functionId": 2,
+                        "functionName": "noop_2",
+                        "id": "22",
+                        "selectMore": false,
+                        "type": "utility",
+                        "utilities": {
+                            "noop": {
+                                "description": "Do nothing and return nothing. Use this if you want to do something in a custom function setup section or leave a placeholder block in a playbook. This does not sleep or wait and will return as soon as possible.",
+                                "fields": [],
+                                "label": "noop",
+                                "name": "noop"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "noop": {}
+                        }
+                    },
+                    "errors": {},
+                    "id": "22",
+                    "type": "utility",
+                    "warnings": {},
+                    "x": 400,
+                    "y": 1200
+                },
+                "25": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "umbrella_investigate_indicator_report:action_result.status",
+                                        "value": "None"
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            }
+                        ],
+                        "functionId": 2,
+                        "functionName": "decision_2",
+                        "id": "25",
+                        "type": "decision"
+                    },
+                    "errors": {},
+                    "id": "25",
+                    "type": "decision",
+                    "warnings": {},
+                    "x": 480,
+                    "y": 680
+                },
+                "27": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "crowdstrike_ip_indicator:action_result.message",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            }
+                        ],
+                        "functionId": 3,
+                        "functionName": "decision_3",
+                        "id": "27",
+                        "type": "decision"
+                    },
+                    "errors": {},
+                    "id": "27",
+                    "type": "decision",
+                    "warnings": {},
+                    "x": 880,
+                    "y": 824.5
+                },
+                "7": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "playbook_input:indicator_type",
+                                        "value": ""
+                                    },
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "playbook_input:indicators",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 2,
+                        "functionName": "filter_2",
+                        "id": "7",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "7",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 460,
+                    "y": 148
+                },
+                "8": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "==",
+                                        "param": "filtered-data:filter_2:condition_1:playbook_input:indicator_type",
+                                        "value": "ip"
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            },
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 1,
+                                        "op": "==",
+                                        "param": "filtered-data:filter_2:condition_1:playbook_input:indicator_type",
+                                        "value": "domain"
+                                    }
+                                ],
+                                "conditionIndex": 1,
+                                "display": "Else If",
+                                "logic": "and",
+                                "type": "elif"
+                            },
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 2,
+                                        "op": "==",
+                                        "param": "filtered-data:filter_2:condition_1:playbook_input:indicator_type",
+                                        "value": "url"
+                                    }
+                                ],
+                                "conditionIndex": 2,
+                                "display": "Else If",
+                                "logic": "and",
+                                "type": "elif"
+                            }
+                        ],
+                        "functionId": 1,
+                        "functionName": "decision_1",
+                        "id": "8",
+                        "type": "decision"
+                    },
+                    "errors": {},
+                    "id": "8",
+                    "type": "decision",
+                    "warnings": {},
+                    "x": 480,
+                    "y": 320
+                },
+                "9": {
+                    "data": {
+                        "action": "ip reputation",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "vt ip reputation",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "connector": "VirusTotal v3",
+                        "connectorConfigs": [
+                            "virustotal test"
+                        ],
+                        "connectorId": "3fe4875d-a4a7-47d3-9ef1-f9e63a6653a4",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "vt_ip_reputation",
+                        "id": "9",
+                        "parameters": {
+                            "ip": "filtered-data:filter_2:condition_1:playbook_input:indicators"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "ip"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "9",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 0,
+                    "y": 688
+                }
+            },
+            "notes": "This playbook uses the following Apps:\n - Intelligence Management (indicator reputation) [asset name = trustar] - query Intelligence Management for threat intelligence\n\nDeployment Notes:\n - To use this playbook as a sub-playbook of \"threat_intel_investigate\", copy it to the local git repository and make sure it has the tags \"investigate\" and \"threat_intel\"\n- To use this playbook as a sub-playbook of \"risk_notable_enrich\", copy it to local and make sure it has the tags \"investigate\" and \"risk_notable\"\n - To control the types of indicators processed by this playbook, change the data types of the \"indicators\" input\n"
+        },
+        "input_spec": [
+            {
+                "contains": [
+                    "user name",
+                    "ip",
+                    "domain",
+                    "url",
+                    "host name",
+                    "vault id",
+                    "hash",
+                    "md5",
+                    "sha1",
+                    "sha256",
+                    "file path"
+                ],
+                "description": "Indicators to enrich with Virustotal Cisco Umbrella and Crowdstrike",
+                "name": "indicators"
+            },
+            {
+                "contains": [
+                    "user name",
+                    "ip",
+                    "domain",
+                    "url",
+                    "host name",
+                    "hash",
+                    "file path",
+                    "file name"
+                ],
+                "description": "",
+                "name": "indicator_type"
+            }
+        ],
+        "output_spec": [
+            {
+                "contains": [],
+                "datapaths": [
+                    "Indicator Enrichment Report"
+                ],
+                "deduplicate": true,
+                "description": "The title of the note summarizing reputation data gathered in this playbook",
+                "metadata": {},
+                "name": "note_title"
+            },
+            {
+                "contains": [],
+                "datapaths": [
+                    "full_report_note:custom_function:full_report_note_content"
+                ],
+                "deduplicate": true,
+                "description": "The content of the note summarizing reputation data gathered in this playbook",
+                "metadata": {},
+                "name": "note_content"
+            }
+        ],
+        "playbook_trigger": "artifact_created",
+        "playbook_type": "data",
+        "python_version": "3",
+        "schema": "5.0.10",
+        "version": "6.0.1.123902"
+    },
+    "create_time": "2024-08-04T04:09:19.759926+00:00",
+    "draft_mode": false,
+    "labels": [
+        "*"
+    ],
+    "tags": [
+        "investigate",
+        "threat_intel"
+    ]
+}
